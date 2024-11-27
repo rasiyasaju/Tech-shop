@@ -1,0 +1,101 @@
+/* HomePageSlider.css */
+.slick-slider {
+  height: 100vh;
+  max-width: 900px;
+  margin: auto;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 20px;
+  color: white;
+}
+
+.product-details h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin-bottom: 5px;
+}
+
+.product-details .original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+/* Offer price styling */
+.offer-price {
+  color: grey;
+  font-weight: bold;
+}
+/*.price {
+  font-size: 18px;
+  color: grey;
+  font-weight: bold;
+}*/
+
+.shop-now-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.shop-now-button:hover {
+  background-color: red;
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Reduce the space between content and dots */
+.slick-slider {
+  padding-bottom: 10px; /* Adjust to control space between content and dots */
+}
+
+.custom-dots {
+  margin-top: -20px; /* Adjust as necessary */
+}
+
+.custom-dots li button:before {
+  color: #e91e63; /* Customize dot color */
+}
+
+.custom-dots li.slick-active button:before {
+  color: #c2185b; /* Customize active dot color */
+}
